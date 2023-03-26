@@ -50,6 +50,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -168,6 +170,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -175,6 +178,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\dichvu.cs" />
+    <Compile Include="Models\EF\BacSi.cs" />
+    <Compile Include="Models\EF\BenhNhan.cs" />
+    <Compile Include="Models\EF\CaKham.cs" />
+    <Compile Include="Models\EF\ChucVu.cs" />
+    <Compile Include="Models\EF\DanhGia.cs" />
+    <Compile Include="Models\EF\DichVu.cs" />
+    <Compile Include="Models\EF\DocTorModel.cs" />
+    <Compile Include="Models\EF\Khoa.cs" />
+    <Compile Include="Models\EF\LichKham.cs" />
+    <Compile Include="Models\EF\PhieuDatLich.cs" />
+    <Compile Include="Models\EF\TaiKhoan.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1795,6 +1810,7 @@
     <Content Include="Media\12354.png" />
     <Content Include="Media\1339788964763703.jpg" />
     <Content Include="Media\1hospital.jpg" />
+    <Content Include="Media\bgr1.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Access\scss\navs\_global.scss" />
@@ -1964,6 +1980,8 @@
     <Content Include="Access\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Access\vendor\jquery\jquery.min.map" />
     <Content Include="Access\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2010,9 +2028,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Introduce.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

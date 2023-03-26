@@ -1,0 +1,19 @@
+﻿@model IEnumerable<DocTorOnline.Models.dichvu>
+@{
+    ViewBag.Title = "Services";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Services</h2>
+
+@foreach (var item in Model)
+{
+    <div class="dichvu">
+        <div class="row">
+            <div class="col-md-4 dichvu-img">
+                <img src="@item.img" />
+                <a href="#"><h3>@item.name</h3></a>
+            </div>
+        </div>
+    </div>
+}

@@ -2,9 +2,19 @@
     ViewBag.Title = "Trang chủ";
 }
 
-<div class="jumbotron">
-    <h1>CHÀO MỪNG BẠN ĐẾN VỚI BỆNH VIỆN</h1>
-    <p class="lead">Ưu tiên hàng đầu tại Việt Nam</p>
+<div class="background" style="background-image: url(/Media/bgr1.jpg)">
+    <div class="bgr-text">
+        <h1>NỀN TẢNG Y TẾ</h1>
+        <p class="lead">CHĂM SÓC SỨC KHỎE TOÀN DIỆN</p>
+    </div>
+    <div class="timkiem">
+        <input type="text" class="form-control bg-light border-0 small" placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+                <i class="fas fa-search fa-sm"></i>
+            </button>
+        </div>
+    </div>
 </div>
 
 <div class="row">
@@ -31,4 +41,27 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Xem thống kê &raquo;</a></p>
     </div>
 </div>
+
+@*@Html.Partial("Services")*@
+@*<div class="dichvu">
+        <h2>Dịch vụ</h2>
+        <div class="row">
+                <div class="col-md-4 dichvu-img">
+                    <img src="~/Media/1339788964763703.jpg" />
+                    <a href="#"><h3>Cơ xương khớp</h3></a>
+                </div>
+                <div class="col-md-4 dichvu-img">
+                    <img src="~/Media/1339788964763703.jpg" />
+                    <a href="#"><h3>Thần kinh</h3></a>
+                </div>
+                <div class="col-md-4 dichvu-img">
+                    <img src="~/Media/1339788964763703.jpg" />
+                    <a href="#"><h3>Tiêu hóa</h3></a>
+                </div>
+                <div class="col-md-4 dichvu-img">
+                    <img src="~/Media/1339788964763703.jpg" />
+                    <a href="#"><h3>Tim mạch</h3></a>
+                </div>
+        </div>
+    </div>*@
 
